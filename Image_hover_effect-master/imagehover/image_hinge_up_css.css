@@ -1,0 +1,62 @@
+/* imghvr-hinge-*
+   ----------------------------- */
+[class^='imghvr-hinge-'], [class*=' imghvr-hinge-'] {
+    -webkit-perspective: 50em;
+    -moz-perspective: 50em;
+    perspective: 50em;
+}
+
+[class^='imghvr-hinge-'] figcaption, [class*=' imghvr-hinge-'] figcaption {
+    opacity: 0;
+    z-index: 0;
+}
+
+[class^='imghvr-hinge-']:hover img, [class*=' imghvr-hinge-']:hover img {
+    opacity: 0;
+}
+
+[class^='imghvr-hinge-']:hover figcaption, [class*=' imghvr-hinge-']:hover figcaption {
+    opacity: 1;
+    -webkit-transition-delay: 0.21s;
+    -moz-transition-delay: 0.21s;
+    transition-delay: 0.21s;
+}
+
+/* imghvr-hinge-up
+   ----------------------------- */
+.imghvr-hinge-up img {
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.imghvr-hinge-up figcaption {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.imghvr-hinge-up:hover > img {
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.imghvr-hinge-up:hover figcaption {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+}
